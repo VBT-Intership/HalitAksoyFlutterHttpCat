@@ -11,10 +11,8 @@ class HttpCatList extends StatefulWidget {
 }
 
 class _HttpCatListState extends State<HttpCatList> {
-
   List<HttpCat> httpCats = [];
 
-  
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
@@ -22,14 +20,19 @@ class _HttpCatListState extends State<HttpCatList> {
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.done) {
           httpCats = snapshot.data;
-          return ListView.builder(
-            itemCount: httpCats.length,
-            itemBuilder: (context, index) {
-            return HttpCatCard(httpCats[index]);
-          });
+          return buildHttpCatList();
         } else {
-          return CircularProgressIndicator();
+          return Center(child: CircularProgressIndicator());
         }
+      },
+    );
+  }
+
+  ListView buildHttpCatList() {
+    return ListView.builder(
+      itemCount: httpCats.length,
+      itemBuilder: (context, index) {
+        return HttpCatCard(httpCats[index]);
       },
     );
   }

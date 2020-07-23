@@ -26,9 +26,10 @@ class _HomeScreenState extends State<HomeScreen> {
     return AppBar(
       backgroundColor: Colors.white,
       actions: <Widget>[
-        FlatButton(onPressed: () {
-          _launchURL();
-        }, child: Text("Goto http.cat"))
+        FlatButton(
+          onPressed: _launchURL,
+          child: Text("Goto http.cat"),
+        )
       ],
       title: Text(
         "Http Cats",
