@@ -1,16 +1,11 @@
 # flutter_http_cat
 
-A new Flutter project.
+Simple Flutter Aplication for https://http.cat
 
-## Getting Started
+## Used
+* [http](https://pub.dev/packages/http) plugin for fetching data from internet
+* [url_launcher](https://pub.dev/packages/url_launcher) plugin for launch url from flutter app
 
-This project is a starting point for a Flutter application.
+## Screenshot
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot](https://github.com/VBT-Intership/HalitAksoyFlutterHttpCat/blob/master/github/Screenshot_1595547256.png)
